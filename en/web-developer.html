@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio Fquido</title>
-    <link rel="icon" type="image/png" href="resources/img/logo.png" />
-    <link rel="stylesheet" type="text/css" href="resources/styles.css" />
+    <title>Fquido's Portfolio</title>
+    <link rel="icon" type="image/png" href="../resources/img/logo.png" />
+    <link rel="stylesheet" type="text/css" href="../resources/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -24,23 +24,26 @@
     <header>
       <div class="bx bx-menu" id="menu-icon"></div>
       <ul class="navbar">
-        <li><a href="index.html">Dom</a></li>
+        <li><a href="../en/index.html">Home</a></li>
       </ul>
     </header>
 
     <!-- Start of Resume Section -->
     <section class="resume" id="projekty">
       <div class="center">
-        <h3>Projekty Minecraft Dev | Tech</h3>
+        <h3>Web Developer Projects</h3>
       </div>
 
       <div class="resume-content">
         <!-- Education 01 -->
-        <div class="box">
-          <h4>Rozgrywki SqudGame 2</h4>
-          <p>SquidGame 2 w minecraft</p>
-          <iframe width="916" height="515" src="https://www.youtube.com/embed/DVTRet3zcKQ?si=33z0pLZ77T8pGZU9" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
+        <a href="https://discord.gg/C9vntqRmcK">
+          <div class="box">
+            <h6>January 20, 2025</h6>
+            <h4>FquidoCodeBooks</h4>
+            <p>Extensive web library of e-books and audiobooks.</p>
+            <img src="../resources/img/web-developer/book.png" alt="FquidoCodeBooks Project">
+          </div>
+        </a>
       </div>
     </section>
     <!-- End of Contact Section -->
@@ -48,22 +51,22 @@
 <style>
     .row {
       display: flex; 
-      flex-wrap: wrap; /* Pozwala na zawijanie elementów w nowy wiersz, gdy nie ma miejsca */
+      flex-wrap: wrap; /* Allows elements to wrap to a new line when there's no space */
       justify-content: center;
       align-items: center;
       height: auto;
-      gap: 20px; /* Odstęp między obrazkami */
-      margin-bottom: 20px; /* Odstęp między rzędami */
+      gap: 20px; /* Spacing between images */
+      margin-bottom: 20px; /* Spacing between rows */
     }
   
     .resume-content {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      gap: 20px; /* Odstęp między obrazkami */
+      gap: 20px; /* Spacing between images */
     }
   
-  /* Można również ustawić maksymalną szerokość dla obrazków, aby nie wychodziły poza kontener */
+  /* You can also set a maximum width for the images so they don't go outside the container */
     .resume-content img {
       max-width: 100%;
       height: auto;
