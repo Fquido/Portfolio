@@ -8,17 +8,8 @@
     <link rel="stylesheet" type="text/css" href="resources/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet" />
   </head>
   <body>
     <header>
@@ -28,47 +19,92 @@
       </ul>
     </header>
 
-    <!-- Start of Resume Section -->
     <section class="resume" id="projekty">
       <div class="center">
         <h3>Projekty Minecraft Dev | Tech</h3>
       </div>
-
       <div class="resume-content">
-        <!-- Education 01 -->
+        <a href="https://discord.gg/C9vntqRmcK">
+          <div class="box">
+            <h4>Skript Minecraft na Vanish</h4>
+            <img src="resources/img/minecraft/vanish.png" alt="Skript Minecraft na Vanish" style="max-width: 300px;">
+          </div>
+        </a>
         <div class="box">
-          <h4>Rozgrywki SqudGame 2</h4>
-          <p>SquidGame 2 w minecraft</p>
-          <iframe width="916" height="515" src="https://www.youtube.com/embed/DVTRet3zcKQ?si=33z0pLZ77T8pGZU9" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <h4>Rozgrywki Squid Game 2</h4>
+          <p>Squid Game 2 w Minecraft</p>
+          <iframe src="https://www.youtube.com/embed/DVTRet3zcKQ?si=33z0pLZ77T8pGZU9" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
       </div>
     </section>
-    <!-- End of Contact Section -->
-</body>
-<style>
+  </body>
+
+  <style>
     .row {
-      display: flex; 
-      flex-wrap: wrap; /* Pozwala na zawijanie elementów w nowy wiersz, gdy nie ma miejsca */
-      justify-content: center;
-      align-items: center;
-      height: auto;
-      gap: 20px; /* Odstęp między obrazkami */
-      margin-bottom: 20px; /* Odstęp między rzędami */
-    }
-  
-    .resume-content {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      gap: 20px; /* Odstęp między obrazkami */
+      align-items: center;
+      height: auto;
+      gap: 20px;
+      margin-bottom: 20px;
     }
   
-  /* Można również ustawić maksymalną szerokość dla obrazków, aby nie wychodziły poza kontener */
-    .resume-content img {
+    .resume-content {
+      width: 100%;
+      max-width: 916px;
+      margin: 0 auto;
+    }
+  
+    .resume-content iframe {
+      width: 100%;
+      height: auto;
       max-width: 100%;
+      max-height: 515px;
+      border-radius: 10px;
+    }
+  
+    .resume-content img {
+      width: 100%;
       height: auto;
       border-radius: 10px;
     }
-</style>
 
+    @media screen and (min-width: 1258px) {
+      .resume-content iframe {
+        height: 600px;
+      }
+    }
+
+    @media screen and (min-width: 1258px) {
+      .resume-content iframe {
+        height: 600px;
+      }
+    }
+
+
+    @media screen and (max-width: 1242px) {
+      .resume-content iframe {
+        height: 500px;
+      }
+    }
+
+    @media screen and (max-width: 994px) {
+      .resume-content iframe {
+        height: 330px;
+      }
+    }
+
+    @media screen and (max-width: 650px) {
+      .resume-content iframe {
+        height: 230px;
+      }
+    }
+
+    @media screen and (max-width: 480px) {
+      .resume-content iframe {
+        height: 180px;
+      }
+    }
+  </style>
 </html>

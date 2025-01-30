@@ -8,17 +8,8 @@
     <link rel="stylesheet" type="text/css" href="resources/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet" />
   </head>
 
   <body>
@@ -29,7 +20,6 @@
       </ul>
     </header>
 
-    <!-- Start of Resume Section -->
     <section class="services" id="usugi">
       <div class="center">
         <h3>Projekty Grafik</h3>
@@ -94,9 +84,7 @@
         </div>
       </div>
     </section>
-    <!-- End of Contact Section -->
 
-    <!-- Modal -->
     <div id="myModal" class="modal">
       <span class="close">&times;</span>
       <img class="modal-content" id="img01">
@@ -106,29 +94,27 @@
   <style>
   .row {
     display: flex; 
-    flex-wrap: wrap; /* Pozwala na zawijanie elementów w nowy wiersz, gdy nie ma miejsca */
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     height: auto;
-    gap: 20px; /* Odstęp między obrazkami */
-    margin-bottom: 20px; /* Odstęp między rzędami */
+    gap: 20px;
+    margin-bottom: 20px;
   }
 
   .service-content {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px; /* Odstęp między obrazkami */
+    gap: 20px;
   }
 
-/* Można również ustawić maksymalną szerokość dla obrazków, aby nie wychodziły poza kontener */
   .service-content img {
     max-width: 100%;
     height: auto;
     border-radius: 10px;
   }
 
-    /* Modal Styles */
     .modal {
       display: none;
       position: fixed;
@@ -168,29 +154,24 @@
   </style>
 
   <script>
-    // Skrypt JavaScript do powiększania obrazków
     const images = document.querySelectorAll('.image');
     const modal = document.getElementById('myModal');
     const modalImg = document.getElementById('img01');
     const closeBtn = document.querySelector('.close');
-
-    // Otwieranie modalnego okna
     images.forEach(img => {
       img.addEventListener('click', function() {
         modal.style.display = "flex";
         setTimeout(() => {
-          modal.classList.add('show'); // Animacja pokazywania
+          modal.classList.add('show');
         }, 10);
         modalImg.src = this.src;
       });
     });
-
-    // Zamykanie modalnego okna
     closeBtn.addEventListener('click', function() {
-      modal.classList.remove('show'); // Animacja znikania
+      modal.classList.remove('show');
       setTimeout(() => {
-        modal.style.display = "none"; // Ukrywanie okna po zakończeniu animacji
-      }, 500); // Czas trwania animacji
+        modal.style.display = "none";
+      }, 500);
     });
   </script>
 </html>

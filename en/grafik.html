@@ -3,22 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Fquido's Portfolio</title>
+    <title>Fquido Portfolio</title>
     <link rel="icon" type="image/png" href="../resources/img/logo.png" />
     <link rel="stylesheet" type="text/css" href="../resources/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet" />
   </head>
 
   <body>
@@ -29,10 +20,9 @@
       </ul>
     </header>
 
-    <!-- Start of Resume Section -->
-    <section class="services" id="usugi">
+    <section class="services" id="services">
       <div class="center">
-        <h3>Graphic Design Projects</h3>
+        <h3>Graphic Designs</h3>
       </div>
       <div class="service-content">
         <div class="row">
@@ -94,9 +84,7 @@
         </div>
       </div>
     </section>
-    <!-- End of Contact Section -->
 
-    <!-- Modal -->
     <div id="myModal" class="modal">
       <span class="close">&times;</span>
       <img class="modal-content" id="img01">
@@ -106,29 +94,27 @@
   <style>
   .row {
     display: flex; 
-    flex-wrap: wrap; /* Allows elements to wrap to a new line when there's no space */
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     height: auto;
-    gap: 20px; /* Spacing between images */
-    margin-bottom: 20px; /* Spacing between rows */
+    gap: 20px;
+    margin-bottom: 20px;
   }
 
   .service-content {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px; /* Spacing between images */
+    gap: 20px;
   }
 
-/* You can also set a maximum width for the images so they don't go outside the container */
   .service-content img {
     max-width: 100%;
     height: auto;
     border-radius: 10px;
   }
 
-    /* Modal Styles */
     .modal {
       display: none;
       position: fixed;
@@ -168,29 +154,24 @@
   </style>
 
   <script>
-    // Javascript for enlarging images
     const images = document.querySelectorAll('.image');
     const modal = document.getElementById('myModal');
     const modalImg = document.getElementById('img01');
     const closeBtn = document.querySelector('.close');
-
-    // Opening the modal window
     images.forEach(img => {
       img.addEventListener('click', function() {
         modal.style.display = "flex";
         setTimeout(() => {
-          modal.classList.add('show'); // Show animation
+          modal.classList.add('show');
         }, 10);
         modalImg.src = this.src;
       });
     });
-
-    // Closing the modal window
     closeBtn.addEventListener('click', function() {
-      modal.classList.remove('show'); // Hide animation
+      modal.classList.remove('show');
       setTimeout(() => {
-        modal.style.display = "none"; // Hide the window after the animation ends
-      }, 500); // Animation duration
+        modal.style.display = "none";
+      }, 500);
     });
   </script>
 </html>
